@@ -1,0 +1,22 @@
+<div class="text-center">
+  <form class="form new-comment-form">
+    <h2>{{name}}</h2>
+    <p>{{description}}</p>
+    <p>Created by {{user.name}} on {{format_date date_created}}</p>
+
+    <button class="btn btn-sm btn-danger" type="submit">Add a comment</button>
+
+    <div>
+      <textarea iname="comment"></textarea>
+    </div>
+    <p>
+      {{ post.comment.comment_text }}
+
+    </p>
+
+  </form>
+
+</div>
+
+
+<script src="../public/js/comment.js"></script>
